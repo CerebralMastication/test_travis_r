@@ -4,11 +4,11 @@ language: r
 
 repos:
   CRAN: https://cloud.r-project.org
-  
-install:
 
 r_packages:
   - ggplot2
-  
+    
+install: skip
+
 script:
   - Rscript runme.R
