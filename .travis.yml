@@ -6,7 +6,6 @@ repos:
   CRAN: https://cloud.r-project.org
   
 install:
-  - R -e 'devtools::install_deps(dep = T)'
 
 r_packages:
   - ggplot2
