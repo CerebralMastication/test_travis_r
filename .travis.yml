@@ -1,7 +1,15 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-language: R
-r_binary_packages: tidyverse
+language: r
 
+repos:
+  CRAN: https://cloud.r-project.org
+  
+install:
+  - R -e 'devtools::install_deps(dep = T)'
+
+r_packages:
+  - ggplot2
+  
 script:
-- Rscript runme.R
+  - Rscript runme.R
