@@ -5,10 +5,8 @@ language: r
 repos:
   CRAN: https://cloud.r-project.org
 
-r_packages:
-  - ggplot2
-    
-install: skip
+install: 
+  - R -e 'install.packages("ggplot2")'
 
 script:
   - Rscript runme.R
